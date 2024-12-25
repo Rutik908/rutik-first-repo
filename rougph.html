@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rough</title>
+</head>
+<body>
+    <table border="2">
+        <tr>
+            <td>Id</td>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>favorite language</th>
+        </tr>
+
+        <tbody id="tbody">
+
+
+        </tbody>
+
+    </table>
+    
+</body>
+<script>
+   
+    
+    // let a = [ "test", 13, true, null, undefined, { name : "rutik", age: 25, location: "dadar" }];
+
+    // // console.log(typeof a);
+
+
+   
+
+
+    // function call_a(value,index,arr){
+
+    // if( value !== "test"){
+
+    //     console.log(value);
+        
+    // }        
+        
+    // }
+
+    // a.map(call_a);
+
+    
+    
+    
+    // if(value === ){
+    //     console.log(value);
+        
+    // }        
+
+
+
+    const student = [
+        { id: 1, firstname: "Malcom", lastname: "Reynolds", age: 35, city: "Osiris", favorite_language: ["html", "css", "java", "php"]},
+        { id: 2, firstname: "Kaylee", lastname: "Frye", age: 23, city: "Haven", favorite_language: ["html", "css", "java", "php"] },
+        { id: 3, firstname: "Jayne", lastname: "Cobb", age: 30, city: "Sihnon", favorite_language: ["html", "css", "java", "php"] },
+        { id: 4, firstname: "Zoe", lastname: "Washburne", age: 34, city: "Persephone", favorite_language: ["html", "css", "java", "php"] },
+        { id: 5, firstname: "Wash", lastname: "Washburne", age: 31, city: "Persephone", favorite_language: ["html", "css", "java", "php"] },
+        { id: 6, firstname: "Simon", lastname: "Tam", age: 28, city: "Bellerophon", favorite_language: ["html", "css", "java", "php"] },
+        { id: 7, firstname: "River", lastname: "Tam", age: 19, city: "Bellerophon", favorite_language: ["html", "css", "java", "php"] },
+        { id: 8, firstname: "Inara", lastname: "Serrano", age: 29, city: "Sihnon", favorite_language: ["html", "css", "java", "php"] },
+        { id: 9, firstname: "Shepherd", lastname: "Book", age: 45, city: "Lilac", favorite_language: ["html", "css", "java", "php"] },
+        { id: 10, firstname: "Badger", lastname: "Rourke", age: 40, city: "Birmingham", favorite_language: ["html", "css", "java", "php"] },
+        { id: 11, firstname: "The", lastname: "Operative", age: 38, city: "Alliance", favorite_language: ["html", "css", "java", "php"] },
+        { id: 12, firstname: "Stitch", lastname: "Stitch", age: 27, city: "BlueSun", favorite_language: ["html", "css", "java", "php"] },
+        { id: 13, firstname: "Athena", lastname: "Gray", age: 25, city: "Hera", favorite_language: ["html", "css", "java", "php"] },
+        { id: 14, firstname: "Niska", lastname: "Niska", age: 50, city: "Niska Station", favorite_language: ["html", "css", "java", "php"] },
+        { id: 15, firstname: "Tracy", lastname: "Smith", age: 29, city: "Persephone", favorite_language: ["html", "css", "java", "php"] }
+    ];
+
+
+
+    let newadd = document.getElementById("tbody");
+
+    newadd.innerHTML = student.map(function(value){
+        return(
+            // style='background-color: yellow;
+            ` <tr>
+                <td>${value.id}</td>
+                <td>${value.firstname}</td>
+                <td>${value.lastname}</td>
+                <td>${value.age}</td>
+                <td>${value.city}</td>
+                <td>${value.favorite_language} </td>
+            </tr>  `
+
+        )
+        
+    }).join(" ");
+
+
+    
+
+
+
+</script>
+</html>
